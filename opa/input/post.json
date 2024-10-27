@@ -1,0 +1,18 @@
+{
+  "resource_type": "post",
+  "action": "create",
+  "user": {
+    "id": "lotan",
+    "roles": [
+      "admin",
+      "moderator",
+      "user"
+    ]
+  },
+  "author": {
+    "id": "iser",
+    "roles": [
+      "user"
+    ]
+  }
+}

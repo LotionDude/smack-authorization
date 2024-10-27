@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  smack-opa:
+    image: openpolicyagent/opa:latest
+    container_name: smack-opa
+    ports:
+      - "8181:8181"
+    volumes:
+      - ./opa/policies:/policies
+    command: ["run", "--server", "/policies"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8181/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

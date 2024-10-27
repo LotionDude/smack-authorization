@@ -1,0 +1,11 @@
+springdoc:
+  api-docs:
+    path: "/api-docs"
+  swagger-ui:
+    path: /swagger
+
+opa-server:
+  base-url: "http://localhost:8181/v1"
+
+server:
+  port: 8090
